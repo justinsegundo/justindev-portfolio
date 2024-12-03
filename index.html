@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>Justnian | Front-End Developer</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://www.facebook.com/justineian.segundo">justnian.dev</a>
+      </div>
+
+      <nav>
+        <div class="open-menu hide-desktop">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <ul class="menu-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Profile Section -->
+      <section class="profile" id="profile">
+        <div class="profile-main">
+          <div class="profile-container">
+            <img src="images/profile-picture.png" class="profile-pic" />
+          </div>
+
+          <div class="section-text">
+            <p class="text">Hello, I'm</p>
+            <h1 class="title">
+              Justin Ian
+              <img src="images/waving.png" class="waving-img" />
+            </h1>
+
+            <p class="job">A Front-end Developer</p>
+
+            <div class="btn-container">
+              <div>
+                <button type="button" class="download-btn">
+                  <a href="index.html">Download CV</a>
+                </button>
+              </div>
+              <div>
+                <button type="button" class="contact-btn">
+                  <a href="#contact" class="contact-a">Contact Details</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="social-media-container">
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/justin-ian-segundo-b4406329a/"
+                  target="_blank"
+                >
+                  <img src="images/linkedin.png" class="linkedin-icon" />
+                </a>
+              </div>
+              <div>
+                <img src="images/github.png" class="github-icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-stacks-container">
+          <div class="left-tech-stacks">
+            <h3 class="tech-stacks-title">Tech Stacks:</h3>
+          </div>
+
+          <div class="tech-stacks-row">
+            <div class="tech-stacks-item">
+              <span title="HTML-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  class="svg"
+                  style="fill: #e34f26"
+                >
+                  <path
+                    d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <div class="tech-stacks-item">
+              <span title="HTML-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  class="svg"
+                  style="fill: rgba(41, 101, 241, 1)"
+                >
+                  <path
+                    d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+
+            <div class="tech-stacks-item">
+              <span title="HTML-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  class="svg"
+                  style="fill: rgba(247, 223, 30, 1)"
+                >
+                  <path
+                    d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+
+            <div class="tech-stacks-item">
+              <span title="HTML-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg"
+                  viewbox="0 0 24 24"
+                  style="fill: rgba(97, 219, 251, 1)"
+                >
+                  <circle cx="12" cy="11.245" r="1.785"></circle>
+                  <path
+                    d="m7.002 14.794-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 0 0 1.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 0 1-.985-2.542zm10.572 6.095-.11-.392a19.628 19.628 0 0 0-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 0 1-.987 2.542z"
+                  ></path>
+                  <path
+                    d="m6.419 8.695-.11-.39c-.826-2.908-.576-4.991.687-5.717 1.235-.715 3.222.13 5.303 2.265l.284.292-.284.291a19.718 19.718 0 0 0-2.02 2.474l-.113.162-.196.016a19.646 19.646 0 0 0-3.157.509l-.394.098zm1.582-5.529c-.224 0-.422.049-.589.145-.828.477-.974 2.138-.404 4.38.891-.197 1.79-.338 2.696-.417a21.058 21.058 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985zm7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291.283-.29a19.827 19.827 0 0 0 2.021-2.477l.112-.16.194-.019a19.473 19.473 0 0 0 3.158-.507l.395-.1.111.391c.822 2.906.573 4.992-.688 5.718a1.978 1.978 0 0 1-1.005.257zm-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986.225 0 .423-.05.589-.145.829-.478.976-2.142.404-4.384-.89.198-1.79.34-2.698.419a20.526 20.526 0 0 1-1.71 2.124z"
+                  ></path>
+                  <path
+                    d="m17.58 8.695-.395-.099a19.477 19.477 0 0 0-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0 0 11.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 0 1-1.713-2.123 20.692 20.692 0 0 1-2.696-.419z"
+                  ></path>
+                  <path
+                    d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 0 1-1.126-1.769 26.028 26.028 0 0 1-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 0 1 4.198 0l.194.019.113.16a25.136 25.136 0 0 1 2.1 3.628l.083.179-.083.177a24.742 24.742 0 0 1-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 0 0 1.832-3.168 23.916 23.916 0 0 0-1.832-3.168 23.877 23.877 0 0 0-3.667 0 23.743 23.743 0 0 0-1.832 3.168 24.82 24.82 0 0 0 1.832 3.168z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-bottom">
+          <a href="#about">
+            <span>SCROLL TO DISCOVER</span>
+          </a>
+
+          <span>
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 animate-over-bounce"
+            >
+              <path
+                d="M12 5v14m0 0 7-7m-7 7-7-7"
+                stroke="#5C5C5C"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <p class="about-title">Get To Know More</p>
+
+        <h1 class="about-text">About Me</h1>
+
+        <div class="about-row">
+          <div class="profile-container">
+            <img src="images/about-img-profile.jpg" class="about-img-profile" />
+          </div>
+          <div class="about-info-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="images/experience-img.png" class="experience-icon" />
+
+                <h3>No Experience</h3>
+                <p>Entry Level</p>
+                <p>Aspiring Front-end Dev</p>
+              </div>
+              <div class="details-container">
+                <img src="images/education-img.png" class="experience-icon" />
+
+                <h3>Education</h3>
+                <p>
+                  B.Sc. Bachelor
+                  <br />
+                  Degree
+                </p>
+                <p>Industrial Technology</p>
+              </div>
+            </div>
+
+            <div class="text-container">
+              <p class="details">
+                I am aspiring to become a front-end developer and to show my
+                skills,knowledge that i have.I know it's not easy to have this
+                kind of job, but i'm always motivated to develop something new
+                which can help or contribute to company.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <p class="about-title">What I am Expert In</p>
+
+        <h1 class="about-text"><span>My</span> Services</h1>
+
+        <div class="services-content">
+          <div class="flex-services">
+            <div class="flex-box">
+              <div class="box-icon">
+                <i class="ri-smartphone-line"></i>
+              </div>
+              <h2>Web Developer</h2>
+              <span class="services-span">
+                I am an enthusiastic aspiring front-end developer with a passion
+                for creating visually appealing and user-friendly web
+                experiences.Currently honing my skills in HTML, CSS, and
+                responsive design, I am dedicated to building websites that are
+                both functional and aesthetically pleasing.
+              </span>
+              <div class="services-btn-container">
+                <button type="button" class="services-btn">See MORE</button>
+              </div>
+            </div>
+            <div class="flex-box">
+              <div class="box-icon">
+                <i class="ri-code-s-slash-line"></i>
+              </div>
+              <h2>Web Developer</h2>
+              <span class="services-span">
+                I am an enthusiastic aspiring front-end developer with a passion
+                for creating visually appealing and user-friendly web
+                experiences. Currently honing my skills in HTML, CSS, and
+                responsive design, I am dedicated to building websites that are
+                both functional and aesthetically pleasing.
+              </span>
+              <div class="services-btn-container">
+                <button type="button" class="services-btn">See MORE</button>
+              </div>
+            </div>
+            <div class="flex-box">
+              <div class="box-icon">
+                <i class="ri-smartphone-line"></i>
+              </div>
+              <h2>Creative Design</h2>
+              <span class="services-span">
+                I am an enthusiastic aspiring front-end developer with a passion
+                for creating visually appealing and user-friendly web
+                experiences. Currently honing my skills in HTML, CSS, and
+                responsive design, I am dedicated to building websites that are
+                both functional and aesthetically pleasing.
+              </span>
+              <div class="services-btn-container">
+                <button type="button" class="services-btn">See MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <p class="about-title">Browse My Recent</p>
+
+        <h1 class="about-text">Projects</h1>
+
+        <div class="project-container">
+          <div class="row">
+            <div class="about-containers">
+              <div class="details-container">
+                <div class="project-img-container">
+                  <img src="images/project-1.png" class="project-img" />
+
+                  <h1>Project One</h1>
+
+                  <div class="project-row-desktop">
+                    <button class="btn-github">Github</button>
+                    <button class="btn-demo">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+              <div class="details-container">
+                <div class="project-img-container">
+                  <img src="images/project-1.png" class="project-img" />
+
+                  <h1>Project Two</h1>
+                  <div class="project-row-desktop">
+                    <button class="btn-github">Github</button>
+                    <button class="btn-demo">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+              <div class="details-container">
+                <div class="project-img-container">
+                  <img src="images/project-3.png" class="project-img" />
+
+                  <h1>Project Three</h1>
+                  <div class="project-row-desktop">
+                    <button class="btn-github">Github</button>
+                    <button class="btn-demo">Live Demo</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="portfolio" id="portfolio">
+        <p class="about-title">PortFolio</p>
+
+        <h1 class="about-text">Latest Project</h1>
+
+        <div class="portfolio-content">
+          <div class="row-portfolio">
+            <img src="images/portfolio_pic.jpg" />
+            <div class="layer">
+              <h1>Visual Design</h1>
+
+              <span
+                >Check out 10 best designs updates for the top web design &
+                development companies.
+              </span>
+            </div>
+          </div>
+          <div class="row-portfolio">
+            <img src="images/portfolio_pic2.avif" />
+            <div class="layer">
+              <h1>Visual Design</h1>
+
+              <span
+                >Check out 10 best designs updates for the top web design &
+                development companies.
+              </span>
+            </div>
+          </div>
+          <div class="row-portfolio">
+            <img src="images/portfolio_pic3.jpg" />
+            <div class="layer">
+              <h1>Visual Design</h1>
+
+              <span
+                >Check out 10 best designs updates for the top web design &
+                development companies.
+              </span>
+            </div>
+          </div>
+
+          <div class="row-portfolio">
+            <img src="images/portfolio_pic3.jpg" />
+            <div class="layer">
+              <h1>Visual Design</h1>
+
+              <span
+                >Check out 10 best designs updates for the top web design &
+                development companies.
+              </span>
+            </div>
+          </div>
+
+          <div class="row-portfolio">
+            <img src="images/portfolio_pic4.png" />
+            <div class="layer">
+              <h1>Visual Design</h1>
+
+              <span
+                >Check out 10 best designs updates for the top web design &
+                development companies.
+              </span>
+            </div>
+          </div>
+
+          <div class="row-portfolio">
+            <img src="images/portfolio_pic6.jpg" />
+            <div class="layer">
+              <h1>Visual Design</h1>
+
+              <span
+                >Check out 10 best designs updates for the top web design &
+                development companies.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-grid">
+          <div class="left-side">
+            <h2 class="contact-text">Contact <span>Me!</span></h2>
+
+            <p>If you hire me, I will have my first job!</p>
+
+            <p>09568854901</p>
+
+            <p>
+              <a href="mailto:jagzmaw1234@gmail.com">jagzmaw1234@gmail.com</a>
+            </p>
+
+            <div class="contact-icons">
+              <button class="btn-contact">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  fill="#0081FB"
+                  width="24"
+                >
+                  <path
+                    d="M20.9744 16.1635C20.6888 17.0545 20.199 17.5 19.5048 17.5C18.6273 17.5 17.7647 16.9735 16.917 15.9206C16.3283 15.1893 15.5026 13.7996 14.44 11.7515C13.984 10.8723 13.5611 10.0959 13.1714 9.42225C13.4809 8.93372 13.757 8.54177 13.9998 8.24641C14.957 7.08214 15.9587 6.5 17.0048 6.5C17.8397 6.5 18.635 7.03584 19.3907 8.10753C20.1673 9.20896 20.7114 10.5694 21.0228 12.1888C21.3292 13.782 21.3131 15.1069 20.9744 16.1635ZM12.0049 11.4296C12.2149 11.8151 12.4349 12.2294 12.6647 12.6725C13.7887 14.839 14.6869 16.3397 15.3591 17.1748C16.6071 18.7249 17.989 19.5 19.5048 19.5C20.3608 19.5 21.0931 19.2297 21.7019 18.6892C22.2267 18.2233 22.6191 17.5849 22.879 16.774C23.3216 15.3931 23.3576 13.7388 22.9868 11.8112C22.6212 9.90978 21.9673 8.29105 21.0252 6.95497C19.8712 5.31832 18.531 4.5 17.0048 4.5C15.3288 4.5 13.8121 5.32543 12.4549 6.97628C12.3132 7.14862 12.1632 7.34668 12.0049 7.57046C11.8466 7.34668 11.6966 7.14862 11.5548 6.97628C10.1976 5.32543 8.68102 4.5 7.005 4.5C5.4788 4.5 4.13867 5.31833 2.98462 6.95498C2.04252 8.29105 1.38864 9.90977 1.02298 11.8112C0.652277 13.7388 0.688225 15.3931 1.13083 16.774C1.39074 17.5849 1.78309 18.2233 2.30788 18.6892C2.91672 19.2297 3.6491 19.5 4.50502 19.5C6.02087 19.5 7.40276 18.7249 8.65069 17.1748C9.32296 16.3397 10.2211 14.839 11.345 12.6726C11.575 12.2294 11.7949 11.8151 12.0049 11.4296ZM10.8384 9.42226C10.4487 10.0959 10.0258 10.8723 9.56972 11.7515C8.50715 13.7996 7.6815 15.1893 7.09279 15.9206C6.24514 16.9735 5.38255 17.5 4.50502 17.5C3.81084 17.5 3.32096 17.0545 3.03539 16.1635C2.69674 15.1069 2.6806 13.782 2.98699 12.1888C3.29843 10.5694 3.84248 9.20896 4.61913 8.10752C5.37481 7.03584 6.1701 6.5 7.005 6.5C8.05111 6.5 9.05277 7.08214 10.01 8.24641C10.2528 8.54176 10.5289 8.93371 10.8384 9.42226Z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="btn-contact">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  fill="rgba(22,138,255,1)"
+                  width="24"
+                >
+                  <path
+                    d="M12.001 2C17.6345 2 22.001 6.1265 22.001 11.7C22.001 17.2735 17.6345 21.4 12.001 21.4C11.0233 21.4023 10.0497 21.273 9.10648 21.0155C8.92907 20.9668 8.7403 20.9808 8.57198 21.055L6.58748 21.931C6.34398 22.0386 6.06291 22.018 5.83768 21.8761C5.61244 21.7342 5.47254 21.4896 5.46448 21.2235L5.40998 19.4445C5.40257 19.2257 5.30547 19.0196 5.14148 18.8745C3.19598 17.1345 2.00098 14.6155 2.00098 11.7C2.00098 6.1265 6.36748 2 12.001 2ZM5.99598 14.5365C5.71398 14.984 6.26398 15.488 6.68498 15.1685L9.84048 12.7735C10.0543 12.6122 10.3491 12.6122 10.563 12.7735L12.8995 14.5235C13.2346 14.7749 13.6596 14.8747 14.0716 14.7987C14.4836 14.7227 14.8451 14.4779 15.0685 14.1235L18.006 9.4635C18.288 9.016 17.738 8.512 17.317 8.8315L14.1615 11.2265C13.9476 11.3878 13.6528 11.3878 13.439 11.2265L11.1025 9.4765C10.7673 9.22511 10.3423 9.12532 9.93034 9.2013C9.51834 9.27728 9.15689 9.5221 8.93348 9.8765L5.99598 14.5365Z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="btn-contact">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  fill="currentColor"
+                  width="24"
+                >
+                  <path
+                    d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="right-side">
+            <form action="">
+              <input type="text" placeholder="Enter your name.." />
+              <input type="text" placeholder="Enter your email.." />
+              <input
+                type="number"
+                placeholder="Enter your number.."
+                min="0"
+                max="11"
+              />
+              <textarea cols="35" rows="10"></textarea>
+
+              <div>
+                <button type="submit" class="btn-submit">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <a href="mailto:jagzmaw1234@gmail.com">
+          <h2>REACH OUT</h2>
+        </a>
+
+        <div class="footer-info-container">
+          <span>Back to Top</span>
+
+          <div>
+            <button class="btn-footer">
+              <a href="#profile">
+                <svg
+                  width="34"
+                  height="34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="transition-transform duration-200 ease-in-out group-hover:animate-over-bounce-reverse"
+                >
+                  <g clip-path="url(#up-arrow_svg__a)">
+                    <path
+                      d="M17 24.071V9.93m0 0L9.929 17M17 9.929 24.071 17"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipath id="up-arrow_svg__a">
+                      <path
+                        fill="#fff"
+                        transform="rotate(-45 20.536 8.464)"
+                        d="M0 0h24v24H0z"
+                      ></path>
+                    </clipath>
+                  </defs>
+                </svg>
+              </a>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Select the  menu (nav ul) and hamburger icon
+      const menu = document.querySelector("nav ul");
+      const menuBtn = document.querySelector(".hamburger-icon");
+      // Function to toggle the menu and X icon
+      function toggleMenu() {
+        menu.classList.toggle("open"); // Toggle the visibility of the menu
+        menuBtn.classList.toggle("open"); // Toggle the X icon
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,700 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 17vh;
+  background-color: white;
+  transition: 0.2s;
+}
+.logo a {
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  position: fixed;
+  top: 11%;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  background: whitesmoke;
+  transform: translateX(100%);
+  cursor: pointer;
+  transition: all 0.45s linear;
+}
+li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  border-bottom: 2px solid black;
+}
+section {
+  padding: 170px 15%;
+}
+.open {
+  transform: translateX(0%);
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  height: 21px;
+  width: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hamburger-icon span {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.profile-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+}
+.section-text .waving-img {
+  width: 2.5rem;
+}
+.section-text p,
+h1 {
+  text-align: center;
+  margin: 0;
+}
+.section-text .text {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+}
+.title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.section-text .job {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+.btn-container .download-btn {
+  padding: 1rem;
+  border: 0.1em solid black;
+  background: white;
+  border-radius: 2rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+}
+.btn-container .download-btn:hover {
+  background: rgb(53, 53, 53);
+  a {
+    color: white;
+  }
+}
+.btn-container .contact-btn {
+  padding: 1rem;
+  border: 0.1em solid black;
+  background: rgb(53, 53, 53);
+  border-radius: 2rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  cursor: pointer;
+}
+.linkedin-icon,
+.github-icon {
+  height: auto;
+  width: 35px;
+}
+.tech-stacks-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.tech-stacks-row {
+  display: flex;
+  gap: 1.5rem;
+}
+.tech-stacks-left {
+  margin-right: 40px;
+}
+.tech-stacks-title {
+  font-weight: 400;
+  color: rgb(115, 115, 115);
+}
+
+.tech-stacks-item {
+  border-radius: 30px;
+  box-shadow: 0 0 10px #00000017;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-stacks-item .svg {
+  padding: 5px;
+  width: 4rem;
+  height: auto;
+  vertical-align: middle;
+}
+.profile-bottom {
+  margin-top: 1.8em;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+
+  a {
+    text-decoration: none;
+  }
+  span {
+    color: rgb(122, 122, 122);
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+@keyframes over-bounce {
+  0%,
+  80% {
+    transform: translateY(0%);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(100%);
+    animation-timing-function: ease-in-out;
+  }
+}
+.animate-over-bounce {
+  animation: over-bounce 1s infinite alternate;
+}
+/*  About Section  */
+.about .about-title,
+.project .project-title {
+  font-size: 1em;
+  color: rgb(85, 85, 85);
+}
+.about-text,
+.project-text {
+  font-size: 2rem;
+}
+.about .about-img-profile {
+  border-radius: 2rem;
+}
+.about-info-container {
+  display: flex;
+  flex-direction: column;
+}
+.about p,
+.project p,
+.services p,
+.portfolio p {
+  text-align: center;
+}
+.about-info-container .experience-icon {
+  width: 32px;
+}
+.about-containers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.about-info-container p {
+  color: rgb(85, 85, 85);
+}
+.details-container {
+  background-color: white;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 30px;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1;
+}
+.text-container {
+  margin: 2em 0;
+}
+
+/* Project Section */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.row h1 {
+  margin: 0.5em 0;
+}
+.row button {
+  cursor: pointer;
+}
+.project-img {
+  width: 100%;
+  height: 70%;
+  border-radius: 2rem;
+}
+
+.article-container .sub-title {
+  font-size: 1.25rem;
+}
+
+.btn-github {
+  background-color: white;
+  border: 1px solid rgb(163, 163, 163);
+  padding: 0.5em 1.9em;
+  border-radius: 1em;
+  font-size: 1em;
+  font-weight: 400;
+  transition: background-color 0.22s;
+}
+.btn-github:hover,
+.btn-demo:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+.btn-demo {
+  margin-top: 1em;
+  background-color: white;
+  border: 1px solid rgb(163, 163, 163);
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 1em;
+}
+.project-row-desktop {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Services Section*/
+.services span {
+  color: rgb(85, 85, 85);
+}
+
+.flex-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1em;
+  color: white;
+  box-sizing: border-box;
+}
+.flex-box {
+  background-color: rgb(145, 140, 140);
+  padding: 2em 2rem;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+.flex-box:hover {
+  transform: translateY(5px);
+}
+.box-icon .ri-smartphone-line,
+.ri-code-s-slash-line {
+  font-size: 1.7rem;
+}
+.flex-box .services-span {
+  color: white;
+}
+.flex-box h2 {
+  margin: 0.5em 0;
+  font-weight: 400;
+}
+.services-span {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.services-btn-container .services-btn {
+  background: none;
+  border: 1px solid white;
+  padding: 0.5em 1.1rem;
+  color: white;
+  border-radius: 2px;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+/* Portfolio Section */
+.portfolio-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  row-gap: 50px;
+}
+.row-portfolio {
+  position: relative;
+  border-radius: 12px;
+  color: white;
+}
+.row-portfolio img {
+  width: 100%;
+  border-radius: 12px;
+}
+.row-portfolio:hover img {
+  transition: 0.5s;
+  transform: translateY(10px);
+}
+.layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #ff5945);
+  padding: 0 40px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.row-portfolio:hover .layer {
+  opacity: 1;
+  height: 100%;
+}
+
+/* Contact Section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.right-side form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right-side input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #bbbdc3;
+}
+form textarea {
+  padding: 10px;
+}
+.right-side .btn-submit {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 3px;
+}
+.right-side .btn-submit:hover {
+  background-color: black;
+  color: white;
+}
+.left-side .contact-text {
+  font-size: 2.4em;
+  font-weight: 600;
+}
+.contact-text span {
+  color: #ff5945;
+}
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left-side p {
+  margin: 10px 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.btn-contact {
+  width: 35px;
+  height: 35px;
+  background-color: #edeef0;
+  border: none;
+  border-radius: 25px;
+}
+.btn-contact:hover {
+  transform: scale(1.3);
+}
+/* Footer Section*/
+footer {
+  margin-bottom: 10px;
+}
+footer h2 {
+  font-size: 104px;
+  color: rgb(229, 231, 235);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+}
+h2:hover {
+  color: black;
+  cursor: url("https://a11rew.dev/assets/mail.png");
+}
+.footer-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-info-container .btn-footer {
+  padding: 5px 6px;
+  background-color: rgb(61, 61, 61);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 592px) {
+  .about-containers {
+    flex-direction: column;
+  }
+  section {
+    overflow: hidden;
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-container {
+    width: auto;
+    height: 43vw;
+    justify-content: center;
+  }
+  nav ul {
+    padding: 0;
+  }
+  li {
+    border-bottom: 1px solid #171717;
+    margin: 2em 0;
+  }
+}
+@media only screen and (max-width: 581px) {
+  .right-side {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 677px) and (max-width: 1199px) {
+  .title,
+  .logo a {
+    font-size: 2.2rem;
+    transition: font-size 0.15s;
+  }
+  .section-text .job {
+    font-size: 1.75rem;
+    transition: font-size 0.15s;
+  }
+  .profile-container {
+    width: 270px;
+    height: 270px;
+  }
+  nav ul {
+    padding: 0;
+  }
+  li {
+    border-bottom: 1px solid #171717;
+    margin: 2em 0;
+  }
+  .about-text {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  .details-container,
+  .flex-box {
+    flex-basis: calc(50% - 1em);
+  }
+  .details-container:nth-child(3),
+  .flex-box:nth-child(3) {
+    flex-basis: 100%;
+  }
+  .flex-services {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .right-side {
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 720px) {
+  .tech-stacks-title {
+    text-align: center;
+    border-bottom: 2px solid rgb(115, 115, 115);
+  }
+  .tech-stacks-container {
+    flex-direction: column;
+  }
+  .left-tech-stacks {
+    display: flex;
+    justify-content: center;
+  }
+  .tech-stacks-row {
+    display: flex;
+    gap: 1rem;
+  }
+  footer h2 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    padding-top: 90px;
+  }
+  .tech-stacks-container {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .profile-main {
+    margin-top: 3rem;
+    margin-bottom: 3em;
+  }
+  .profile-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+  .hide-mobile {
+    display: none;
+  }
+
+  nav ul {
+    position: unset;
+    background: none;
+    transform: translateX(0%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.3em;
+  }
+  li {
+    &:nth-of-type(1) {
+      margin-top: 0;
+    }
+  }
+  li a {
+    font-size: 1.5rem;
+  }
+  main {
+    padding-top: 70px;
+  }
+  .profile-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+  }
+  .profile-container {
+    display: flex;
+    margin: auto 0;
+  }
+  .section-text .text {
+    font-size: 23px;
+  }
+  .social-media-container {
+    margin-top: 1.1em;
+  }
+
+  .about-row {
+    display: flex;
+    gap: 2em;
+    margin-top: 40px;
+  }
+  .project-container,
+  .services-content,
+  .portfolio-content {
+    margin-top: 40px;
+  }
+  .about-text {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .text-container p {
+    text-align: left;
+  }
+  .project-row-desktop {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-demo,
+  .btn-github {
+    margin: 0;
+    padding: 9px 5%;
+    border-radius: 3rem;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .section-text .job {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .flex-services {
+    flex-direction: row;
+  }
+}
