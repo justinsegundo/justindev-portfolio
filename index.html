@@ -541,6 +541,11 @@
         menu.classList.toggle("open"); // Toggle the visibility of the menu
         menuBtn.classList.toggle("open"); // Toggle the X icon
       }
+
+      menu.addEventListener("click", () => {
+        menu.classList.remove("open");
+        menuBtn.classList.remove("open");
+      });
     </script>
   </body>
 </html>
