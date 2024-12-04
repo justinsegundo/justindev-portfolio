@@ -402,13 +402,16 @@ h1 {
 }
 
 /* Contact Section */
-.contact-grid {
+.contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-
-.right-side input {
+.right-side {
+  position: relative;
+}
+.right-side form input,
+form textarea {
   outline: none;
   width: 100%;
   padding: 10px;
@@ -416,9 +419,7 @@ h1 {
   font-size: 15px;
   border: 1px solid #bbbdc3;
 }
-form textarea {
-  padding: 10px;
-}
+
 .right-side .btn-submit {
   background-color: white;
   border: 1px solid gray;
@@ -504,20 +505,15 @@ h2:hover {
   .about-containers {
     flex-direction: column;
   }
-  section {
-    overflow: hidden;
-  }
+
   .portfolio-content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contact-grid {
+  .contact {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 677px) {
-  .contact-grid {
-    gap: 1.5rem;
-  }
 }
 @media screen and (max-width: 600px) {
   .profile-container {
@@ -579,7 +575,7 @@ h2:hover {
   .portfolio-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  .contact-grid {
+  .contact {
     grid-template-columns: repeat(1, 1fr);
   }
   .right-side {
