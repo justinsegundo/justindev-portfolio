@@ -407,13 +407,12 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-.right-side form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 .right-side input {
-  padding: 12px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
   font-size: 15px;
   border: 1px solid #bbbdc3;
 }
@@ -493,7 +492,14 @@ h2:hover {
   border: none;
   cursor: pointer;
 }
-
+@media (max-width: 371px) {
+  .btn-container .download-btn {
+    padding: 0.8em;
+  }
+  .btn-container .contact-btn {
+    padding: 0.8em;
+  }
+}
 @media screen and (max-width: 592px) {
   .about-containers {
     flex-direction: column;
@@ -506,6 +512,11 @@ h2:hover {
   }
   .contact-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 677px) {
+  .contact-grid {
+    gap: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
