@@ -22,7 +22,7 @@ header {
   transition: 0.2s;
 }
 .logo a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
   font-weight: 700;
@@ -173,7 +173,6 @@ h1 {
   font-weight: 400;
   color: rgb(115, 115, 115);
 }
-
 .tech-stacks-item {
   border-radius: 30px;
   box-shadow: 0 0 10px #00000017;
@@ -644,6 +643,9 @@ h2:hover {
   li a {
     font-size: 1.5rem;
   }
+  .logo a {
+    font-size: 2rem;
+  }
   main {
     padding-top: 70px;
   }
@@ -703,5 +705,13 @@ h2:hover {
   }
   .flex-services {
     flex-direction: row;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .btn-container .contact-btn {
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
